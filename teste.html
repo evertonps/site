@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.geral{
+    width: 100px;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+div.bola {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-animation: mycolor 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mycolor 5s infinite;
+}
+p{
+    float: left;
+    color: #fff;
+    -webkit-animation: mycolorP 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mycolorP 5s infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 0px; left: 100px;}
+    50%  {top: 100px; left: 100px;}
+    75%  {top: 100px; left: 0px;}
+    100% {top: 0px; left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 0px; left: 100px;}
+    50%  {top: 100px; left: 100px;}
+    75%  {top: 100px; left: 0px;}
+    100% {top: 0px; left: 0px;}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mycolor {
+    0%   {background: red;}
+    25%  {background: blue;}
+    50%  {background: yellow;}
+    75%  {background: green;}
+    100% {background: red;}
+}
+
+/* Standard syntax */
+@keyframes mycolor {
+    0%   {background: red;}
+    25%  {background: blue;}
+    50%  {background: yellow;}
+    75%  {background: green;}
+    100% {background: red;}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mycolorP {
+    0%   {color: white;}
+    25%  {color: white;}
+    50%  {color: red;}
+    75%  {color: white;}
+    100% {color: white;}
+}
+
+/* Standard syntax */
+@keyframes mycolorP {
+    0%   {color: white;}
+    25%  {color: white;}
+    50%  {color: red;}
+    75%  {color: white;}
+    100% {color: white;}
+}
+</style>
+</head>
+<body>
+
+
+<div class="geral">
+    <div class="bola"></div>
+    <p class="texto">
+    exemplo
+    </p>
+</div>
+
+</body>
+</html>
